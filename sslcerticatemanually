@@ -1,0 +1,8 @@
+.htacess    creeate a file in side the file paste the belwo script to run the server with https wth doamin name .
+
+
+<IfModule mod_rewrite.c>
+        RewriteEngine On
+        RewriteCond %{HTTPS} off
+        RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
