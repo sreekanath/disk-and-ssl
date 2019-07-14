@@ -1,0 +1,12 @@
+
+sudo file -s /dev/xvd*
+
+sudo resize2fs /dev/xvda1
+
+
+exit
+connect again 
+still same
+reboot instance
+
+df -h check volume
